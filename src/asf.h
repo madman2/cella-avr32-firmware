@@ -52,12 +52,45 @@
  * running the ASF driver selector tool. Any changes will be discarded.
  */
 
+// From module: AES - Advanced Encryption Standard
+#include <aes.h>
+
+// From module: CPU Cycle Counter
+#include <cycle_counter.h>
+
 // From module: Compiler abstraction layer and code utilities
 #include <compiler.h>
 #include <status_codes.h>
 
-// From module: EVK1104S
-#include <led.h>
+// From module: DMACA - DMA Controller A
+#include <dmaca.h>
+
+// From module: Delay routines
+#include <delay.h>
+
+// From module: EBI Static Memory Controller (SMC)
+#include <smc.h>
+
+// From module: ECCHRS - Error Corrected Code Controller
+#include <ecchrs.h>
+
+// From module: FAT file system
+#include <fat.h>
+#include <file.h>
+#include <fs_com.h>
+#include <navigation.h>
+
+// From module: FAT file system with POSIX API support
+#include <fsaccess.h>
+
+// From module: FAT file system with text file support
+#include <reader_txt.h>
+
+// From module: FAT file system with unicode support
+#include <unicode.h>
+
+// From module: FLASHC - Flash Controller
+#include <flashc.h>
 
 // From module: GPIO - General-Purpose Input/Output
 #include <gpio.h>
@@ -68,7 +101,53 @@
 // From module: Interrupt management - UC3 implementation
 #include <interrupt.h>
 
+// From module: Memory Control Access Interface
+#include <ctrl_access.h>
+
+// From module: NAND Flash on EBI
+#include <nand_flash_common.h>
+#include <nand_flash_ecc.h>
+#include <nand_flash_model.h>
+#include <nand_flash_raw.h>
+#include <nand_flash_spare_scheme.h>
+
+// From module: PM Power Manager- UC3 A0/A1/A3/A4/B0/B1 implementation
+#include <power_clocks_lib.h>
+#include <sleep.h>
+
 // From module: Part identification macros
 #include <parts.h>
+
+// From module: Sleep manager - UC3 implementation
+#include <sleepmgr.h>
+#include <uc3/sleepmgr.h>
+
+// From module: Standard serial I/O (stdio) - UC3 implementation
+#include <stdio_serial.h>
+
+// From module: System Clock Control - UC3 A3/A4 implementation
+#include <sysclk.h>
+
+// From module: USART - Serial interface - UC3 implementation
+#include <serial.h>
+
+// From module: USART - Universal Synchronous/Asynchronous Receiver/Transmitter
+#include <usart.h>
+
+// From module: USART Debug strings
+#include <print_funcs.h>
+
+// From module: USB Device MSC (Single Interface Device)
+#include <udi_msc.h>
+
+// From module: USB Device Stack Core (Common API)
+#include <udc.h>
+#include <udd.h>
+
+// From module: USB MSC Protocol
+#include <usb_protocol_msc.h>
+
+// From module: Virtual Memory in RAM
+#include <virtual_mem.h>
 
 #endif // ASF_H
